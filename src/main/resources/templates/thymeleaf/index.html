@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>字符串属性</h1>
+<p th:text="${userName}" />
+<h1>日期属性</h1>
+<p th:text="${#dates.format(date, 'yyyy-MM-dd hh:mm:ss')}" />
+<h1>循环</h1>
+<div th:each="user,userStat :${list}">
+    <p th:text="'第' + ${userStat.count} + '个用户'">
+    <p>ID:<span th:text="${user.id}"></span></p>
+    <p>名字:<span th:text="${user.name}"></span></p>
+</div>
+<h1>判断1</h1>
+<div th:switch="${userName}">
+    <p th:case="'刘志强'">存在刘志强</p>
+    <p th:case="'王妍'">存在刘志强王妍</p>
+    <p th:case="*">不存在任何人</p>
+</div>
+<h1>判断2</h1>
+<span th:if="${userName} == '刘志强'" th:text="${userName}">  </span><br />
+</body>
+</html>

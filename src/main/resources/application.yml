@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: dolphin # 服务名
+  #freemarker配置
+  freemarker:
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    template-loader-path: classpath:/templates
+  # thymeleaf
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    check-template-location: true
+    mode: HTML5
+    prefix: classpath:/templates
+    suffix: .html
+    servlet:
+      content-type: text/html
+
+
+server:
+  port: 6533 # 服务端口
