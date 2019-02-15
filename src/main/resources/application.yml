@@ -1,6 +1,18 @@
 spring:
   application:
     name: dolphin # 服务名
+  #redis配置数据
+  redis:
+    hostName: 123.206.19.217
+    port: 6379
+    database: 2
+    password:
+    pool:
+      maxActive: 10
+      maxWait: -1
+      maxIdle: 100
+      minIdle: 0
+    timeout: 5000
   #freemarker配置
   freemarker:
     cache: false

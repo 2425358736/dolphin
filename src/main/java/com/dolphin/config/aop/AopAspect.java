@@ -37,7 +37,7 @@ public class AopAspect {
         Object o = pjp.proceed();
         logger.info("----环绕通知----");
         // 可以修改值
-        if (o.getClass().toString().indexOf("Map") > 0){
+        if (o != null && o.getClass().toString().indexOf("Map") > 0){
             Map map = (Map) o;
             map.put("作者","刘志强");
             return map;
