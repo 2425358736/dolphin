@@ -1,0 +1,13 @@
+## SpringBoot系列
+1. [springboot搭建(拦截器，过滤器)](http://note.youdao.com/)
+2. [springboot集成freemarker(模板引擎)](http://note.youdao.com/)
+3. [springboot集成thymeleaf(模板引擎)](http://note.youdao.com/)
+4. [springboot集成aop(切面)](http://note.youdao.com/)
+5. [springboot集成redis(非关系型数据库)](http://note.youdao.com/)
+6. [springboot 集成 mybatis,mysql,Druid(数据库连接池), mybatis-generator(MBG自动生成)](http://note.youdao.com/)
+7. [springboot 集成 log 日志(系统日志，sql日志，异常日志)](http://note.youdao.com/)
+8. [springboot集成swagger(api文档)](http://note.youdao.com/noteshare?id=507d4d243df808b7e59fb2343d9e8602&sub=10BB8128CF274EE0A5F8D035DDB424F5)
+9. [springboot集成quartz(动态定时基于内存)](http://note.youdao.com/)
+10. [springboot集成websocket](http://note.youdao.com/)
+11. [springboot集成shiro集成redis缓存（前后端分离或不分离）](http://note.youdao.com/)
+12. [springboot集成security(权限控制)](http://note.youdao.com/)
