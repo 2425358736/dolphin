@@ -14,6 +14,11 @@ spring:
       maxIdle: 100
       minIdle: 0
     timeout: 5000
+  rabbitmq:
+    host: 123.206.19.217
+    port: 5672
+    username: guest
+    password: guest
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/dolphin?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
     username: liuzhiqiang
