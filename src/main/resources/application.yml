@@ -1,6 +1,7 @@
 spring:
   application:
-    name: dolphin # 服务名
+    # 服务名
+    name: dolphin
   #redis配置数据
   redis:
     hostName: 123.206.19.217
@@ -13,6 +14,29 @@ spring:
       maxIdle: 100
       minIdle: 0
     timeout: 5000
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/dolphin?useUnicode=true&amp;characterEncoding=UTF-8&amp;tinyInt1isBit=false
+    username: liuzhiqiang
+    password: lzq199528
+    driver-class-name: com.mysql.jdbc.Driver
+    # DruidDataSource 阿里数据库连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    #连接池的配置信息
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    useGlobalDataSourceStat: true
   #freemarker配置
   freemarker:
     cache: false
@@ -34,6 +58,14 @@ spring:
     servlet:
       content-type: text/html
 
+#mybatis 配置信息
+mybatis:
+  type-aliases-package: com.dolphin.domain
+  config-location: classpath:/mybatis/mybatis-config.xml
+  mapperLocations: classpath:/mappers/**/*.xml
 
 server:
   port: 6533 # 服务端口
+
+logging:
+    config: classpath:log/logback.xml
