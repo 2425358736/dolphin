@@ -14,3 +14,4 @@
 13. [常用注解](https://github.com/2425358736/dolphin/blob/master/%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3%E8%AF%B4%E6%98%8E.md)
 14. [lombok使用](https://github.com/2425358736/dolphin/blob/master/lombok%E4%BD%BF%E7%94%A8.md)
 15. [springboot集成rabbitmq](https://github.com/2425358736/dolphin/blob/master/src/main/java/com/dolphin/config/rabbitmq/springboot%E9%9B%86%E6%88%90rabbitmq.md)
+16. [springboot集成security](https://github.com/2425358736/dolphin/blob/master/src/main/java/com/dolphin/config/security/springboot%20%E9%9B%86%E6%88%90%20security.md)
